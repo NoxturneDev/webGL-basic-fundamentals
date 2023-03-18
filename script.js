@@ -26,7 +26,7 @@ gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertexData), gl.STATIC_DRAW);
 // create to vertex shader
 const vertexShader = gl.createShader(gl.VERTEX_SHADER);
 gl.shaderSource(vertexShader, `
-attributes vec3 position;
+attribute vec3 position;
 
 void main(){
   gl_Position = vec4(position, 1);
